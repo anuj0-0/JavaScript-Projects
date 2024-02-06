@@ -1,0 +1,57 @@
+.container,
+body {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(153, 151, 152, 1));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-size: cover;
+  /* width: 100vb; */
+}
+#watch {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(153, 151, 152, 1));
+  /* display: block; */
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  box-shadow: 8px -2px 10px red;
+  z-index: 2;
+  /* animation: anim 3.5s linear  3.3s infinite normal; */
+}
+#display {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(246, 234, 236, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 100px;
+  /* text-shadow: 2px 20px 4px yellow; */
+  /* box-shadow: 2px 2px 8px red; */
+}
+
+@keyframes anim {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn{
+  margin: 20px;
+}
+
+#rotate{
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  border-radius: 50%;
+  /* display: none; */
+  border:6px solid green;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  z-index: 3;
+}
